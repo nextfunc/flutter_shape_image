@@ -29,14 +29,14 @@ class CircleImage extends StatelessWidget {
 }
 
 class CircleClipper extends CustomClipper<Rect> {
-  final double size;
+  final double radius;
 
-  CircleClipper(this.size);
+  CircleClipper(this.radius);
 
   @override
   getClip(Size size) {
-    return Rect.fromLTWH((size.width - this.size) / 2,
-        (size.height - this.size) / 2, this.size, this.size);
+    return Rect.fromLTWH((size.width - this.radius) / 2,
+        (size.height - this.radius) / 2, this.radius, this.radius);
   }
 
   @override

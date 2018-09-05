@@ -32,16 +32,19 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: new AppBar(
         title: new Text(widget.title),
       ),
-      body: new Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            CircleImage(
-              imageUrl: 'https://avatars2.githubusercontent.com/u/4323410?s=460&v=4',
-              radius: 500.0,
-            )
-          ],
-        ),
+      body: ListView(
+        children: <Widget>[
+          CircleImage(
+            imageUrl:
+                'https://avatars2.githubusercontent.com/u/4323410?s=460&v=4',
+            radius: 100.0,
+          ),
+          CircleImage(
+            imageUrl:
+                'https://avatars2.githubusercontent.com/u/4323410?s=460&v=4',
+            radius: 100.0,
+          )
+        ],
       ),
     );
   }
