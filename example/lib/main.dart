@@ -34,15 +34,22 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: ListView(
         children: <Widget>[
-          CircleImage(
-            imageUrl:
-                'https://avatars2.githubusercontent.com/u/4323410?s=460&v=4',
-            radius: 100.0,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: CircleImage(
+              imageUrl:
+                  'https://avatars2.githubusercontent.com/u/4323410?s=460&v=4',
+              radius: 100.0,
+            ),
           ),
-          CircleImage(
-            imageUrl:
-                'https://avatars2.githubusercontent.com/u/4323410?s=460&v=4',
-            radius: 100.0,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: DiamondImage(
+              imageUrl:
+                  'https://avatars2.githubusercontent.com/u/4323410?s=460&v=4',
+              width: 200.0,
+              height: 220.0,
+            ),
           )
         ],
       ),

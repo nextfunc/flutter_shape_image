@@ -34,7 +34,7 @@ class CircleClipper extends CustomClipper<Rect> {
   CircleClipper(this.radius);
 
   @override
-  getClip(Size size) {
+  Rect getClip(Size size) {
     return Rect.fromLTWH((size.width - this.radius) / 2,
         (size.height - this.radius) / 2, this.radius, this.radius);
   }
