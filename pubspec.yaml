@@ -1,8 +1,9 @@
 name: flutter_shape_image
 description: A new Flutter package.
 version: 0.0.1
-author:
-homepage:
+authors:
+ - Phuc Tran <phuc.tran@nextfunc.com>
+homepage: https://github.com/thphuc/flutter_shape_image
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
